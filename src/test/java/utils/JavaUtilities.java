@@ -48,6 +48,10 @@ public class JavaUtilities {
         return result.get("auth");
 
 
+
+    }
+    public void changeEnvironment(String env){
+        System.setProperty("karate.env",env);
     }
 
 }

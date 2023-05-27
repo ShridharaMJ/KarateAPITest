@@ -1,12 +1,12 @@
 Feature: Testing basics
 
   Background:
-   #* def javaUtil =  Java.type('utils.JavaUtilities')
-   #* def rs =  javaUtil.doJavaStuff("STAGE")
-   # * print rs
-   # * def javaUtiles = Java.type('utils.JavaUtilities')
-  #  * def stageEnv = javaUtiles.getEnvVariables("STAGE")
-   # * def betaEnv = javaUtiles.getEnvVariables("BETA")
+   * def javaUtil =  Java.type('utils.JavaUtilities')
+   * def rs =  javaUtil.doJavaStuff("STAGE")
+    * print rs
+    * def javaUtiles = Java.type('utils.JavaUtilities')
+    * def stageEnv = javaUtiles.getEnvVariables("STAGE")
+    * def betaEnv = javaUtiles.getEnvVariables("BETA")
     * def single = call read('classpath:Features/Demo.feature')
 
   @Test1
