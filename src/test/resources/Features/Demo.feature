@@ -3,7 +3,7 @@ Feature: Testing env changing
   Background:
     * def javaUtiles = Java.type('utils.JavaUtilities')
 
-  @evnChange
+  @evnChange @reg
   Scenario: Reading base url of different env
   * print 'Before changing env...---> '+ karate.env
   * print 'Testing karate...'

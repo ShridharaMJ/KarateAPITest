@@ -12,6 +12,7 @@ function fn() {
   var config = {
     env: env,
     baseUrl: 'https://localapi.abc123.example.com/api/v1/validate/customerid',
+
     apiKey: ''
   }
   if (karate.properties['demo.server.https'] === 'true') {
@@ -27,11 +28,12 @@ function fn() {
    // config.authInfo = { authTime: result.time, authToken: result.token };
   }
   else if(env=='BETA'){
- config.baseUrl='tetsing.beta.base.com';
-
+   config.baseUrl='tetsing.beta.base.com';
+   config.gorest= 'https://gorest.co.in';
   }
   else if(env=='STAGE'){
-config.baseUrl='tetsing.stage.base.com';
+    config.baseUrl='tetsing.stage.base.com';
+    config.gorest= 'https://gorest.co.in';
 
   }
   return config;
